@@ -353,6 +353,8 @@ jobs:
     if: github.ref == 'refs/heads/main' && github.repository == 'hanguyen225/shadPS4-fixed-shader-for-CUSA24620' && github.event_name == 'push'
     needs: [get-info, windows-sdl, macos-sdl, linux-sdl]
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
     - name: Download all artifacts
       uses: actions/download-artifact@v8
