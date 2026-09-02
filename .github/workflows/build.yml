@@ -350,7 +350,7 @@ jobs:
       run: cmake --build ${{github.workspace}}/build --config ${{env.BUILD_TYPE}} --parallel $(nproc)
 
   pre-release:
-    if: github.ref == 'refs/heads/main' && github.repository == 'shadps4-emu/shadPS4' && github.event_name == 'push'
+    if: github.ref == 'refs/heads/main' && github.repository == 'hanguyen225/shadPS4-fixed-shader-for-CUSA24620' && github.event_name == 'push'
     needs: [get-info, windows-sdl, macos-sdl, linux-sdl]
     runs-on: ubuntu-latest
     steps:
