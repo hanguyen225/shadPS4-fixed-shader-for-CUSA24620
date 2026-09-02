@@ -542,6 +542,7 @@ bool Rasterizer::IsComputeImageCopy(const Pipeline* pipeline) {
 }
 
 bool Rasterizer::IsComputeImageClear(const Pipeline* pipeline) {
+    return false;
     if (!pipeline->IsCompute()) {
         return false;
     }
