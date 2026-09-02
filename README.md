@@ -1,3 +1,7 @@
+<!--
+SPDX-FileCopyrightText: 2024-2026 shadPS4 Emulator Project
+SPDX-License-Identifier: GPL-2.0-or-later
+-->
 # Fix shader issue for game Love Live! School Idol Festival after school ACTIVITY Wai-Wai!Home Meeting!! (CUSA24620)
 
 It solves the dark character shading problem mentioned in [this](https://github.com/shadps4-compatibility/shadps4-game-compatibility/issues/2664)
